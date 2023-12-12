@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Pokémon API Form
+  body
+    h1 Enter a Pokémon Name or ID
+    p For example: ditto, 132, pikachu, or 25
+    form(action="/ps4/promise" method="post")
+      input(type="text" name="pokemon" required placeholder="e.g., ditto or 132")
+      button(type="submit") Submit (Promise)
+
+    form(action="/ps4/async" method="post")
+      input(type="text" name="pokemon" required placeholder="e.g., ditto or 132")
+      button(type="submit") Submit (Async/Await)
+
+    form(action="/ps4/callback" method="post")
+      input(type="text" name="pokemon" required placeholder="e.g., ditto or 132")
+      button(type="submit") Submit (Callback)

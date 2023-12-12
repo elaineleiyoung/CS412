@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title API Results
+  body
+    h1 API Results
+    if data
+      p= JSON.stringify(data, null, 2)
+    else
+      p No data received.
