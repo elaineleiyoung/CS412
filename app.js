@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const ps4Router = require('./ps4');
+const redisClient = require('./redisClient');  // Importing the Redis client
 
 const app = express();
 const port = 3000;
